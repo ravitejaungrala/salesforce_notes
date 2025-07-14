@@ -1,42 +1,241 @@
 {
-    "intro-salesforce": {
+  "fundamentals": {
+    "title": "Fundamentals",
+    "topics": {
+      "intro-salesforce": {
         "title": "Introduction to Salesforce",
         "sections": [
-            {
-                "type": "definition",
-                "content": "Salesforce is a cloud-based Customer Relationship Management (CRM) platform that provides a suite of tools and services for managing customer interactions, automating business processes, and building custom applications."
+          {
+            "type": "definition",
+            "content": "Salesforce is a cloud-based Customer Relationship Management (CRM) platform that provides services for customer relationship management, application development, and AI capabilities.",
+            "mainPoints": [
+              "Cloud-based SaaS platform",
+              "Leader in CRM solutions",
+              "Extensible platform for custom development"
+            ]
+          },
+          {
+            "type": "subtopic",
+            "title": "Cloud Computing Basics",
+            "definition": "Delivery of computing services over the internet ('the cloud') including servers, storage, databases, networking, software.",
+            "example": "Salesforce eliminates need for on-premise servers by hosting all data and applications in their cloud.",
+            "usage": {
+              "how": "Access through web browser or mobile app",
+              "where": "Anywhere with internet connection"
             },
-            {
-                "type": "key-concepts",
-                "items": [
-                    "Multi-tenancy: Single instance serves multiple customers (\"tenants\") with data isolation",
-                    "Metadata-driven architecture: Configuration stored as metadata",
-                    "PaaS offerings: Heroku, Lightning Platform for custom app development",
-                    "Declarative development: Build with clicks, not just code"
-                ]
+            "mainPoints": [
+              "On-demand self-service",
+              "Broad network access",
+              "Resource pooling",
+              "Rapid elasticity"
+            ]
+          },
+          {
+            "type": "subtopic",
+            "title": "Salesforce Ecosystem Overview",
+            "definition": "The complete collection of Salesforce products, services, and community resources.",
+            "example": "Core products: Sales Cloud, Service Cloud, Marketing Cloud, Platform (for custom apps)",
+            "usage": {
+              "how": "Integrate different clouds based on business needs",
+              "where": "Across entire customer lifecycle"
             },
-            {
-                "type": "example",
-                "content": "A technology company uses Salesforce to track customer interactions across email, phone, and chat, manage their sales pipeline with Opportunities, automate marketing campaigns with Pardot integration, and build custom apps for their field service technicians."
-            }
+            "mainPoints": [
+              "CRM Applications",
+              "Platform Services",
+              "AppExchange marketplace",
+              "Developer tools and APIs"
+            ]
+          },
+          {
+            "type": "subtopic",
+            "title": "Multi-tenant Architecture",
+            "definition": "Architecture where a single instance of software serves multiple customers (tenants).",
+            "example": "All Salesforce customers use same infrastructure but data is isolated.",
+            "usage": {
+              "how": "Automatic for all Salesforce orgs",
+              "where": "Core to Salesforce's delivery model"
+            },
+            "mainPoints": [
+              "Shared infrastructure",
+              "Data isolation",
+              "Automatic upgrades",
+              "Economies of scale"
+            ]
+          },
+          {
+            "type": "subtopic",
+            "title": "Salesforce Editions and Licenses",
+            "definition": "Different versions of Salesforce with varying features and pricing.",
+            "example": "Developer Edition (free), Enterprise Edition, Unlimited Edition",
+            "usage": {
+              "how": "Choose based on feature needs and user count",
+              "where": "When setting up new Salesforce org"
+            },
+            "mainPoints": [
+              "Feature variations between editions",
+              "User license types (Standard, Platform, etc.)",
+              "Permission sets extend access",
+              "Developer Edition for learning"
+            ]
+          }
         ]
-    },
-    "navigating-sf": {
+      },
+      "navigating-salesforce": {
         "title": "Navigating Salesforce",
         "sections": [
-            {
-                "type": "definition",
-                "content": "Understanding the Salesforce user interface and navigation patterns is essential for effective development and administration."
+          {
+            "type": "definition",
+            "content": "Understanding the Salesforce user interface and navigation patterns.",
+            "mainPoints": [
+              "Lightning Experience is modern UI",
+              "Setup area for configuration",
+              "Different navigation for admins vs end users"
+            ]
+          },
+          {
+            "type": "subtopic",
+            "title": "User Interface Overview",
+            "definition": "The main components and layout of Salesforce's interface.",
+            "example": "Navigation bar, App Launcher, Recent Items, Object tabs",
+            "usage": {
+              "how": "Use tabs and navigation menu to move between areas",
+              "where": "Throughout daily Salesforce use"
             },
-            {
-                "type": "key-concepts",
-                "items": [
-                    "App Launcher: Central hub for accessing all apps and items",
-                    "Setup Menu: Configuration center (accessed via gear icon)",
-                    "Lightning Experience: Modern Salesforce UI interface",
-                    "Salesforce Mobile: Mobile app functionality"
-                ]
-            }
+            "mainPoints": [
+              "Lightning Experience vs Classic",
+              "Global search bar",
+              "Notification bell",
+              "Help and training resources"
+            ]
+          },
+          {
+            "type": "subtopic",
+            "title": "Setup Menu and Configuration",
+            "definition": "The administrative area for configuring Salesforce.",
+            "example": "Create custom objects, manage users, configure security",
+            "usage": {
+              "how": "Access via gear icon → Setup",
+              "where": "For all administrative tasks"
+            },
+            "mainPoints": [
+              "Quick Find to search setup options",
+              "Setup divided into sections",
+              "Some features require System Administrator profile",
+              "Use Setup Audit Trail to track changes"
+            ]
+          },
+          {
+            "type": "subtopic",
+            "title": "App Launcher and Lightning Experience",
+            "definition": "Tools for accessing different Salesforce apps and features.",
+            "example": "Click App Launcher to switch between Sales and Service apps",
+            "usage": {
+              "how": "Click App Launcher (9-dot icon) to view all apps",
+              "where": "When needing to switch contexts"
+            },
+            "mainPoints": [
+              "Customizable navigation",
+              "Pinned favorites",
+              "Lightning Experience is default",
+              "Can switch to Classic if needed"
+            ]
+          },
+          {
+            "type": "subtopic",
+            "title": "Salesforce Mobile App",
+            "definition": "Native mobile application for accessing Salesforce on smartphones.",
+            "example": "Field reps updating Opportunities from their phones",
+            "usage": {
+              "how": "Download from app store and login",
+              "where": "When working remotely or in field"
+            },
+            "mainPoints": [
+              "Available for iOS and Android",
+              "Offline capabilities",
+              "Mobile-specific features",
+              "Customizable mobile navigation"
+            ]
+          }
         ]
+      },
+      "data-modeling": {
+        "title": "Data Modeling",
+        "sections": [
+          {
+            "type": "definition",
+            "content": "The process of designing how data is organized and related in Salesforce.",
+            "mainPoints": [
+              "Foundation for custom applications",
+              "Determines data relationships",
+              "Impacts reporting capabilities"
+            ]
+          },
+          {
+            "type": "subtopic",
+            "title": "Standard vs. Custom Objects",
+            "definition": "Standard objects come with Salesforce, custom objects are created for specific needs.",
+            "example": "Account is standard, Project__c could be custom for a PM app",
+            "usage": {
+              "how": "Create custom objects in Setup → Object Manager",
+              "where": "When standard objects don't meet requirements"
+            },
+            "mainPoints": [
+              "Standard objects: Account, Contact, Opportunity etc.",
+              "Custom objects have __c suffix",
+              "Custom objects support custom fields",
+              "Both appear in API"
+            ]
+          },
+          {
+            "type": "subtopic",
+            "title": "Fields and Field Types",
+            "definition": "The specific data elements that make up objects.",
+            "example": "Text field for names, Currency for amounts, Picklist for categories",
+            "usage": {
+              "how": "Add fields to objects in Setup",
+              "where": "When needing to capture specific data"
+            },
+            "mainPoints": [
+              "Different data types (Text, Number, Date, etc.)",
+              "Field attributes (required, unique, etc.)",
+              "Custom fields have __c suffix",
+              "Help text and descriptions improve usability"
+            ]
+          },
+          {
+            "type": "subtopic",
+            "title": "Relationships",
+            "definition": "How different objects connect and relate to each other.",
+            "example": "Account has many Contacts (Lookup), Invoice has line items (Master-Detail)",
+            "usage": {
+              "how": "Create relationship fields between objects",
+              "where": "When data needs to be connected across objects"
+            },
+            "mainPoints": [
+              "Lookup: Loose relationship",
+              "Master-Detail: Tight relationship with cascade delete",
+              "Hierarchical: For user org charts",
+              "Junction objects for many-to-many"
+            ]
+          },
+          {
+            "type": "subtopic",
+            "title": "Schema Builder",
+            "definition": "Visual tool for viewing and editing data model relationships.",
+            "example": "Drag-and-drop interface to see all objects and relationships",
+            "usage": {
+              "how": "Access in Setup → Schema Builder",
+              "where": "When designing or documenting data model"
+            },
+            "mainPoints": [
+              "Visual representation of objects",
+              "Can create fields and relationships",
+              "Filter to show specific objects",
+              "Helpful for complex data models"
+            ]
+          }
+        ]
+      }
     }
+  }
 }
