@@ -1,0 +1,42 @@
+{
+    "intro-salesforce": {
+        "title": "Introduction to Salesforce",
+        "sections": [
+            {
+                "type": "definition",
+                "content": "Salesforce is a cloud-based Customer Relationship Management (CRM) platform that provides a suite of tools and services for managing customer interactions, automating business processes, and building custom applications."
+            },
+            {
+                "type": "key-concepts",
+                "items": [
+                    "Multi-tenancy: Single instance serves multiple customers (\"tenants\") with data isolation",
+                    "Metadata-driven architecture: Configuration stored as metadata",
+                    "PaaS offerings: Heroku, Lightning Platform for custom app development",
+                    "Declarative development: Build with clicks, not just code"
+                ]
+            },
+            {
+                "type": "example",
+                "content": "A technology company uses Salesforce to track customer interactions across email, phone, and chat, manage their sales pipeline with Opportunities, automate marketing campaigns with Pardot integration, and build custom apps for their field service technicians."
+            }
+        ]
+    },
+    "navigating-sf": {
+        "title": "Navigating Salesforce",
+        "sections": [
+            {
+                "type": "definition",
+                "content": "Understanding the Salesforce user interface and navigation patterns is essential for effective development and administration."
+            },
+            {
+                "type": "key-concepts",
+                "items": [
+                    "App Launcher: Central hub for accessing all apps and items",
+                    "Setup Menu: Configuration center (accessed via gear icon)",
+                    "Lightning Experience: Modern Salesforce UI interface",
+                    "Salesforce Mobile: Mobile app functionality"
+                ]
+            }
+        ]
+    }
+}
