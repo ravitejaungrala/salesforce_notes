@@ -1,7 +1,4 @@
-{
-  "fundamentals": {
-    "title": "Fundamentals",
-    "topics": {
+
       "intro-salesforce": {
         "title": "Introduction to Salesforce",
         "sections": [
@@ -236,6 +233,4 @@
           }
         ]
       }
-    }
-  }
-}
+  
