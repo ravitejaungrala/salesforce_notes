@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Developer Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Prism.js for syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-end" id="sidebar-wrapper">
+            <div class="sidebar-heading bg-primary text-white p-3 d-flex justify-content-between align-items-center">
+                <span>Salesforce Developer Hub</span>
+                <button class="btn btn-sm btn-light d-md-none" id="mobileSidebarToggle">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="list-group list-group-flush sidebar-scrollable">
+                <div class="list-group-item list-group-item-action sidebar-section" data-bs-toggle="collapse" href="#fundamentalsCollapse" aria-expanded="true">
+                    <i class="fas fa-cube me-2"></i> Fundamentals
+                    <i class="fas fa-chevron-down float-end mt-1"></i>
+                </div>
+                <div class="collapse show" id="fundamentalsCollapse">
+                    <a href="#intro-salesforce" class="list-group-item list-group-item-action ps-5">
+                        <i class="fas fa-play-circle me-2"></i> Introduction
+                    </a>
+                    <a href="#navigating-sf" class="list-group-item list-group-item-action ps-5">
+                        <i class="fas fa-compass me-2"></i> Navigation
+                    </a>
+                    <a href="#data-modeling" class="list-group-item list-group-item-action ps-5">
+                        <i class="fas fa-database me-2"></i> Data Modeling
+                    </a>
+                </div>
 
+                <div class="list-group-item list-group-item-action sidebar-section" data-bs-toggle="collapse" href="#coreDevCollapse">
+                    <i class="fas fa-code me-2"></i> Core Development
+                    <i class="fas fa-chevron-down float-end mt-1"></i>
+                </div>
+                <div class="collapse" id="coreDevCollapse">
+                    <a href="#apex" class="list-group-item list-group-item-action ps-5">
+                        <i class="fab fa-salesforce me-2"></i> Apex
+                    </a>
+                    <a href="#soql" class="list-group-item list-group-item-action ps-5">
+                        <i class="fas fa-search me-2"></i> SOQL/SOSL
+                    </a>
+                    <a href="#lwc" class="list-group-item list-group-item-action ps-5">
+                        <i class="fas fa-bolt me-2"></i> LWC
+                    </a>
+                </div>
+
+                <!-- More sections... -->
+            </div>
+            <div class="sidebar-footer p-3 bg-light">
+                <div class="progress mb-2">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                </div>
+                <button class="btn btn-sm btn-outline-primary w-100">
+                    <i class="fas fa-user me-1"></i> My Profile
+                </button>
+            </div>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-primary me-2" id="sidebarToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="d-flex w-100">
+                        <div class="input-group search-box">
+                            <input type="text" class="form-control" placeholder="Search topics...">
+                            <button class="btn btn-outline-secondary" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-fluid px-4 py-4">
+                <div id="content-area">
+                    <div class="welcome-message text-center py-5">
+                        <img src="https://developer.salesforce.com/resources2/images/platform-logos/salesforce-platform-logo.png" alt="Salesforce Logo" class="mb-4" width="200">
+                        <h2 class="text-primary">Welcome to Salesforce Developer Hub</h2>
+                        <p class="lead">Your comprehensive guide from zero to hero</p>
+                        <div class="mt-4">
+                            <button class="btn btn-primary btn-lg me-2">
+                                <i class="fas fa-rocket me-1"></i> Start Learning
+                            </button>
+                            <button class="btn btn-outline-secondary btn-lg">
+                                <i class="fas fa-road me-1"></i> View Roadmap
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="mt-5 pt-3 pb-2 border-top text-muted small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; 2023 Salesforce Developer Hub. Not affiliated with Salesforce.com.</p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <a href="#" class="text-decoration-none me-3">Terms</a>
+                            <a href="#" class="text-decoration-none me-3">Privacy</a>
+                            <a href="#" class="text-decoration-none">Contact</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Prism.js for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-apex.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
